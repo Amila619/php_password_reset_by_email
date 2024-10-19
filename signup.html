@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <title>Sign Up</title>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
+</head>
+<body class="h-screen flex justify-center items-center">
+    <form id="signup" action="process-signup.php" method="post" class="grid gap-2 shadow-lg max-w-80 w-full p-6 rounded-md bg-slate-50" novalidate>
+      <h1 class="text-4xl text-center uppercase">Sign Up</h1>
+        <div class="flex flex-col space-y-2">
+            <label for="name" class="text-md text-slate-900 font-semibold">Name</label>
+            <input type="text" name="name" id="name" class="bg-gray-300 p-2 rounded-sm">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="email" class="text-md text-slate-900 font-semibold">Email</label>
+            <input type="email" name="email" id="email" class="bg-gray-300 p-2 rounded-sm">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="password" class="text-md text-slate-900 font-semibold">Password</label>
+            <input type="password" name="password" id="password" class="bg-gray-300 p-2 rounded-sm">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="password_confirmation" class="text-md text-slate-900 font-semibold">Repeat Password</label>
+            <input type="password" name="password_confirmation" id="password_confirmation" class="bg-gray-300 p-2 rounded-sm">
+        </div>
+        <input type="submit" value="Sign Up" class="bg-gray-300 border-solid border-2 border-slate-500 text-slate-900 font-bold p-2 rounded-md mt-4 cursor-pointer">
+    </form>
+</body>
+</html>
